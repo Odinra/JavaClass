@@ -1,19 +1,19 @@
 package Main;
 
-public class GravityCalculator {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		double gravity = -9.81;// earth's gravity in m/s^2
-		double initialVelocity = 0;
-		double fallingTime = 10.0;
-		double initialPosition = 0;
-		double finalPosition = 0;
-		
-		finalPosition = .5*gravity*fallingTime*fallingTime + initialVelocity*fallingTime + initialPosition;
-		
-		System.out.println("The objects position after " + fallingTime + " seconds is " + finalPosition + "m");
-		
-	}
-
-}
+//PUBLIC CLASS GRAVITYCALCULATOR {
+//
+//	PUBLIC STATIC VOID MAIN(STRING[] ARGS) {
+//		// TODO AUTO-GENERATED METHOD STUB
+//		DOUBLE GRAVITY = -9.81;// EARTH'S GRAVITY IN M/S^2
+//		DOUBLE INITIALVELOCITY = 0;
+//		DOUBLE FALLINGTIME = 10.0;
+//		DOUBLE INITIALPOSITION = 0;
+//		DOUBLE FINALPOSITION = 0;
+//		
+//		FINALPOSITION = .5*GRAVITY*FALLINGTIME*FALLINGTIME + INITIALVELOCITY*FALLINGTIME + INITIALPOSITION;
+//		
+//		SYSTEM.OUT.PRINTLN("THE OBJECTS POSITION AFTER " + FALLINGTIME + " SECONDS IS " + FINALPOSITION + "M");
+//		
+//	}
+//
+//}
