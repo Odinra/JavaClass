@@ -18,7 +18,7 @@ public class DrawGraphics {
         
         surface.drawOval(50, 50, 80, 100);
         
-        surface.drawRoundRect(300, 300, 50, 100, 20, 20);
+        surface.drawRoundRect(100, 200, 50, 100, 20, 20);
         
         box.draw(surface);
     }
