@@ -14,7 +14,10 @@ public class FooCorporation {
 	 */
 	public static void Pay(double hours, double pay){
 		double totalPay = 0;
-		if (hours <= 60){
+		if(pay < 8.00){
+			System.out.println("Error: You must be payed at least $8.00 per hour");
+		}
+		else if (hours <= 60){
 			totalPay = hours * pay;
 			if(hours > 40){
 				totalPay += (hours - 40) * pay * .5;
