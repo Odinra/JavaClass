@@ -2,18 +2,19 @@ package Main;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.ArrayList;
 
 public class DrawGraphics {
-    BouncingBox box, box2, box3;
+    ArrayList<BouncingBox>  boxes = new ArrayList<BouncingBox>();
     
     /** Initializes this class for drawing. */
     public DrawGraphics() {
-        box = new BouncingBox(200, 50, Color.RED);
-        box.setMovementVector(2, 1);
-        box2 = new BouncingBox(50, 200, Color.BLUE);
-        box2.setMovementVector(1, 2);
-        box3 = new BouncingBox(100, 100, Color.GREEN);
-        box3.setMovementVector(2, 5);
+        boxes.add(new BouncingBox(200, 50, Color.RED));
+        boxes.add(new BouncingBox(50, 200, Color.BLUE));
+        boxes.add(new BouncingBox(100, 100, Color.GREEN));
+        boxes.get(0).setMovementVector(6, 2);
+        boxes.get(1).setMovementVector(3, 4);
+        boxes.get(2).setMovementVector(1, 5);
     }
 
     /** Draw the contents of the window on surface. Called 20 times per second. */
@@ -25,8 +26,8 @@ public class DrawGraphics {
         
         surface.drawRoundRect(100, 200, 50, 100, 20, 20);
         
-        box.draw(surface);
-        box2.draw(surface);
-        box3.draw(surface);
+        for(BouncingBox b: boxes){
+        	b.draw(surface);
+        }
     }
 } 
