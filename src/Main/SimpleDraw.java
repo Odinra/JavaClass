@@ -29,7 +29,7 @@ public class SimpleDraw extends JPanel implements Runnable {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        // Enable anti-aliasing for better looking graphics
+        // Enable anti-aliasing for better looking graphics 
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         draw.draw(g2);
@@ -88,4 +88,4 @@ public class SimpleDraw extends JPanel implements Runnable {
 
         frame.setVisible(true);
     }
-} 
+}
